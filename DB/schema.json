@@ -1,0 +1,42 @@
+[
+    {
+        CollectionName:"user",
+        Schema:{
+            "userid":"String",
+            "password":"String",
+            "userType":"String",
+            "FirstName":"String",
+            "LastName":"String",
+            "emailID":"String",
+            "MobileNo":"Number",
+            "Address":{
+                "line1":"String",
+                "line2":"String",
+                "line3":"String",
+                "city":"String",
+                "pincode":"String",
+                "state":"String"
+            }
+        }
+    },
+    {
+        CollectionName:"job",
+        Schema:{
+            "photographers":[
+                {
+                    "userid":"String",
+                    "quotedPrice":"Number",
+                    "comments":"String",
+                    "status":"String"
+                }
+            ],
+            "jobID":"String",
+            "clientid":"String",
+            "jobDesc":"String",
+            "startDate":"Date",
+            "endDate":"Date",
+            "price":"Number"
+        }
+    }
+    
+]
